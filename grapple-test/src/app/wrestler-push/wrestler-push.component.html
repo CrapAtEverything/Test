@@ -1,3 +1,12 @@
+<!-- 
+	# in angular is to set an ID to an element. You can use id="" if you want
+	Answer uses id="" a lot but the # syntax is pretty cool for other reasons
+-->
 <br><input #name placeholder="name"><br><br>
 <input #image placeholder="image"><br><br>
-<button (click)="postData(name.value);">SEND ME TO HELL</button>
+
+<!-- 
+	(anything here)="" this is an event listener specifically for that element
+	All you need to do is link it to a function in the .ts file associated with this one
+-->
+<button (click)="postData(name.value, image.value);">SEND ME TO HELL</button>
