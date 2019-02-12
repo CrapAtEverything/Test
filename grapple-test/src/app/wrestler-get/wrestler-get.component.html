@@ -3,7 +3,16 @@
 	It has a wrestler-get-component.ts file linked to it which is where your moustache 
 	syntax variables are coming from
 -->
-<div>
-  <h1>{{ wrestler.name }}</h1>
-  <img src="{{wrestler.image}}">
+<div class="headerImg">
+	<img src="{{wrestler.image}}">
 </div>
+<p>{{wrestler.name}}</p>
+<section class="links">
+	<i class="fab fa-twitter icon"></i><span class="social-text">@{{wrestler.twitter}}</span>
+</section>
+<section class="links">
+	<i class ="fas fa-tshirt icon"></i><span class="social-text"><a href="{{wrestler.merch}}">{{wrestler.merch}}</a></span>
+</section>
+
+
+

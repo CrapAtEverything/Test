@@ -19,8 +19,10 @@ export class WrestlerGetComponent implements OnInit {
   private wrestlerId:number = 1;
 
   wrestler:any = {
-    name: 'Hoe',
-    image: 'http://unsplash.it/401'
+    name: 'Luke Basham',
+    image: 'https://pbs.twimg.com/profile_images/1093898155660361732/fvgaGdh8_400x400.jpg',
+    twitter: 'LukeBasham88',
+    merch: 'https://lukebashammerch.bigcartel.com'
   }
 
   constructor(private http: HttpClient) { } 
